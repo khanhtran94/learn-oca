@@ -1,5 +1,7 @@
 package a.b;
 
-public class Bear {
+import pond.shore.Bird;
 
+public class Bear {
+    Bird bird;
 }

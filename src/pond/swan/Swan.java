@@ -1,7 +1,5 @@
 package pond.swan;
 
-import javafx.embed.swing.SwingNode;
-import packageb.B;
 import pond.shore.Bird;
 import pond.shore.SubBird;
 

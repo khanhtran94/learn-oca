@@ -1,12 +1,11 @@
 package packageb;
 
-import static  packagea.C.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import static java.util.Arrays.asList;
 import static java.util.Arrays.sort;
+import static packagea.C.printC;
 //import static packagea.C.printC;
 
 //import java.util.Arrays;
@@ -18,17 +17,18 @@ public class B {
 //        objects.add(String.valueOf(this));
 //    }
 
-    String brand;
+    private String brand;
     int length;
     boolean empty;
-    public B(String brand, int length) {
+
+    B(String brand, int length) {
         this.brand = brand;
         length = this.length;
     }
 
 
     public static void main(String[] args) {
-        B b =new B("white", 2);
+        B b = new B("white", 2);
         System.out.println(b.brand + "  " + b.length);
 //        B b = new B();
 //        System.out.print("empty " + b.empty);
@@ -123,7 +123,7 @@ public class B {
 //        System.out.println(numbers.substring(7,7));
 //        run(11);
         asList("1");
-        int[] test = {32,23,1,21,2,3};
+        int[] test = {32, 23, 1, 21, 2, 3};
         sort(test);
         System.out.println(test[0]);
 //        Arrays.asList("2"); error compiler
@@ -138,6 +138,7 @@ public class B {
 
 
     }
+
     public static void run(int... nums) {
         System.out.println(nums[1]);
 
