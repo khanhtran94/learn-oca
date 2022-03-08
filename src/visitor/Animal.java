@@ -61,9 +61,9 @@ public class Animal {
         if ("" == test) System.out.println("==");
         if ("a".equals(test)) System.out.println("equal");
 
-        StringBuilder b = "rumble";
-        b.append(4).deleteCharAt(3).delete(3, b.length() - 1);
-        System.out.println(b);
+//        StringBuilder b = "rumble";
+//        b.append(4).deleteCharAt(3).delete(3, b.length() - 1);
+//        System.out.println(b);
 
     }
 }
