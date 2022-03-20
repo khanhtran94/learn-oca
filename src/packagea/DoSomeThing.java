@@ -7,13 +7,16 @@ class DoSomething {
             stop();
         } catch (ArithmeticException e) {
             System.out.print("B");
-        } finally {
+        } catch (NullPointerException n) {
+            System.out.println("null");
+        }
+        finally {
             System.out.print("C");
         }
         System.out.print("D");
     }
 
-    public void stop() {
+    public void stop() throws StackOverflowError{
         System.out.print("E");
         Object x = null;
         x.toString();
